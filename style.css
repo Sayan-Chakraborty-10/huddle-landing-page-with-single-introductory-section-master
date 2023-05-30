@@ -1,0 +1,115 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: blueviolet;
+}
+header{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.container{
+    display: flex;
+    gap: 40px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.container-image img{
+    width: 100%;
+}
+.container-body{
+    display: flex;
+    flex-direction: column;
+   width: 450px;
+}
+h1{
+    font-size: xx-large;
+    color: white;
+}
+p{
+    font-size: large;
+    color: white;
+}
+#btn{
+    width: 200px;
+    font-size:medium;
+    padding: 10px 40px 10px 40px;
+    border: 2px solid white;
+    color: blueviolet;
+    border-radius: 20px;
+}
+#btn:hover{
+    color: white;
+    cursor: pointer;
+    background-color:palevioletred;
+    border: 2px solid palevioletred;
+}
+.footer-image{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right:40px ;
+    margin-top: 50px;
+}
+.fa-facebook-f{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+.fa-twitter{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+.fa-instagram{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+.fa-twitter:hover{
+    cursor: pointer;
+    color: rgb(255, 0, 85);
+    border: 2px solid rgb(255, 0, 85);
+}
+@media screen and (max-width:576px) {
+    body{
+        margin: 0;
+        width: 50%;
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: blueviolet;
+    }
+    header{
+        margin: 55px;
+    }
+    .container{
+        width: 350px;
+        flex-direction: column;
+        margin: 0;
+        margin-top:30px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .container-image img{
+        width: 100%;
+        margin: 55px;
+    }
+    .container-body{
+        align-items: center;
+    }
+    .container-body p{
+        width: 300px;
+    }
+    .footer-image{
+        justify-content: space-evenly;
+        padding-left: 240px;
+    }
+}
